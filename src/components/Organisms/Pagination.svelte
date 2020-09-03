@@ -2,8 +2,8 @@
   import Item from "@/components/Atoms/Pagination/Item.svelte";
   export let pages;
   export let currentPage;
+  export let totalPage;
   import { createEventDispatcher } from "svelte";
-
   const dispatch = createEventDispatcher();
 
   const prevPage = (event) => {
@@ -39,9 +39,13 @@
 </style>
 
 <div class="pagination">
-  <button class="button" on:click={prevPage}>&lt;</button>
+  {#if currentPage > 1}
+    <button class="button" on:click={prevPage}>&lt;</button>
+  {/if}
   {#each pages as page, index}
     <Item {page} {currentPage} on:pageChange />
   {/each}
-  <button class="button" on:click={nextPage}>&gt;</button>
+  {#if currentPage !== totalPage}
+    <button class="button" on:click={nextPage}>&gt;</button>
+  {/if}
 </div>

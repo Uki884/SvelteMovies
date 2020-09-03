@@ -43,4 +43,8 @@
 </style>
 
 <MovieContent {movies} {getMovie} {page} />
-<Pagination {pages} currentPage={page} on:pageChange={changePage} />
+<Pagination
+  {pages}
+  currentPage={page}
+  {...pagination}
+  on:pageChange={changePage} />
