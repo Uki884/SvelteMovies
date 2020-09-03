@@ -52,7 +52,9 @@
       class="card-image"
       src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/{imageUrl}" />
   {:else}
-    <div class="noimage">画像がありません</div>
+    <img
+      src="http://design-ec.com/d/e_others_50/l_e_others_500.png "
+      class="card-image" />
   {/if}
 
   <div class="card-title">{title}</div>

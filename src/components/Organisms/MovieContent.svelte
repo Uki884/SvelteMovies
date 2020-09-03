@@ -6,6 +6,7 @@
 <style lang="scss">
   .movie-content {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
 </style>

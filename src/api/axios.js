@@ -6,7 +6,8 @@ const api = axios.create({
   baseURL,
   params: {
     api_key: '7a570c3e4e674a1a929f220be1cad824',
-    language: 'ja'
+    language: 'ja',
+    region: 'JP'
   }
 });
 
