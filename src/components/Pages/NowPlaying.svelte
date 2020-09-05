@@ -31,6 +31,7 @@
     };
     movies = data.results;
     console.log(movies, pagination);
+    console.log(pages);
   };
 
   onMount(() => {

@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 100px 0 60px 0;
   }
 </style>
 

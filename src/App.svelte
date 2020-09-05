@@ -1,6 +1,5 @@
 <script>
-  import Movie from "@/components/Pages/Movie.svelte";
-  import TheHeader from "@/components/Organisms/TheHeader.svelte";
+  import Index from "@/components/pages/Index.svelte";
 </script>
 
 <style>
@@ -8,6 +7,5 @@
 </style>
 
 <main>
-  <TheHeader />
-  <Movie />
+  <Index />
 </main>
