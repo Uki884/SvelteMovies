@@ -3,8 +3,4 @@
   export let movies;
 </script>
 
-<style>
-
-</style>
-
 <MovieContent {movies} />
